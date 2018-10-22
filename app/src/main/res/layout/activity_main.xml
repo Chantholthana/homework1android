@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRgister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Register"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRgister"
+        android:hint="StudentName"
+        />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edName"
+        android:hint="Phone"
+        />
+    <EditText
+        android:id="@+id/edClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhone"
+        android:hint="Class"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/edClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Register"
+        android:textSize="18sp"
+        android:background="@color/colorAccent"
+        android:layout_centerInParent="true"
+    />
+    <Button
+        android:id="@+id/btnCall"
+    android:layout_below="@+id/btnRegister"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Phone Call"
+    android:textSize="18sp"
+    android:background="@color/colorPrimary"
+    android:layout_centerInParent="true"
+    />
+
+
+
+</RelativeLayout>
